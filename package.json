@@ -2,8 +2,13 @@
   "name": "strong-promise",
   "version": "0.1.0",
   "description": "Forget the mistakes of the past to resolve a strong promise.",
+  "main": "build/scripts/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
+    "clean": "rimraf ./build",
+    "lint": "tslint ./scripts",
+    "build": "tsc",
+    "prepublish": "npm run clean && npm run lint && npm run build"
   },
   "repository": {
     "type": "git",
