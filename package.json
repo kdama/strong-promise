@@ -1,0 +1,35 @@
+{
+  "name": "strong-promise",
+  "version": "0.1.0",
+  "description": "Forget the mistakes of the past to resolve a strong promise.",
+  "main": "build/scripts/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "clean": "rimraf ./build",
+    "lint": "tslint ./scripts",
+    "build": "tsc",
+    "prepublish": "npm run clean && npm run lint && npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kdama/strong-promise.git"
+  },
+  "keywords": [
+    "Promise"
+  ],
+  "author": "Kai Kodama <cai.codama@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/kdama/strong-promise/issues"
+  },
+  "homepage": "https://github.com/kdama/strong-promise#readme",
+  "devDependencies": {
+    "@types/node": "^6.0.52",
+    "rimraf": "^2.5.4",
+    "tslint": "^4.1.1",
+    "typescript": "^2.1.4"
+  },
+  "engines": {
+    "node": ">=6"
+  }
+}
